@@ -18,6 +18,14 @@
 \RequirePackage{titlesec} 
 \RequirePackage{hyperref}
 \RequirePackage{adjustbox}
+\RequirePackage{fontspec}
+\RequirePackage{polyglossia}
+\setdefaultlanguage{russian}
+\setotherlanguage{english}
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\newfontfamily\cyrillicfont{Liberation Serif}
+\newfontfamily\cyrillicfontsf{Liberation Sans}
 \RequirePackage{biblatex}
 \RequirePackage{tikz}
 \usetikzlibrary{calc,positioning}
@@ -27,14 +35,6 @@
 \definecolor{JournalAccent2}{HTML}{B31B5E} 
 
 % cfg/cfg-fonts.tex (инлайн: кириллица через fontspec)
-\RequirePackage{fontspec}
-\RequirePackage{polyglossia}
-\setdefaultlanguage{russian}
-\setotherlanguage{english}
-\setmainfont{Liberation Serif}
-\setsansfont{Liberation Sans}
-\newfontfamily\cyrillicfont{Liberation Serif}
-\newfontfamily\cyrillicfontsf{Liberation Sans}
 
 % cfg/cfg-metadata.tex (инлайн)
 \providecommand{\SetJournalTitle}[1]{}

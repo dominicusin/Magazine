@@ -16,23 +16,23 @@ Professional academic publishing system organized into modular components.
 ## 🔗 Repository URLs
 
 ### Core Components
-- **🧠 Core Engine**: [integral-philosophy-core](https://github.com/dominicusin/integral-philosophy-core)
-- **🌐 Web Components**: [integral-philosophy-web](https://github.com/dominicusin/integral-philosophy-web)
-- **🛠️ CLI Tools**: [integral-philosophy-cli](https://github.com/dominicusin/integral-philosophy-cli)
+- **🧠 Core Engine**: [integral-philosophy-core](https://github.com/neoallunity/integral-philosophy-core)
+- **🌐 Web Components**: [integral-philosophy-web](https://github.com/neoallunity/integral-philosophy-web)
+- **🛠️ CLI Tools**: [integral-philosophy-cli](https://github.com/neoallunity/integral-philosophy-cli)
 
 ### Supporting Components
-- **📚 Documentation**: [integral-philosophy-docs](https://github.com/dominicusin/integral-philosophy-docs)
-- **📦 Sample Content**: [integral-philosophy-content](https://github.com/dominicusin/integral-philosophy-content)
-- **⚙️ Configuration**: [integral-philosophy-config](https://github.com/dominicusin/integral-philosophy-config)
-- **🚀 Deployment**: [integral-philosophy-deploy](https://github.com/dominicusin/integral-philosophy-deploy)
-- **🧪 Testing**: [integral-philosophy-tests](https://github.com/dominicusin/integral-philosophy-tests)
+- **📚 Documentation**: [integral-philosophy-docs](https://github.com/neoallunity/integral-philosophy-docs)
+- **📦 Sample Content**: [integral-philosophy-content](https://github.com/neoallunity/integral-philosophy-content)
+- **⚙️ Configuration**: [integral-philosophy-config](https://github.com/neoallunity/integral-philosophy-config)
+- **🚀 Deployment**: [integral-philosophy-deploy](https://github.com/neoallunity/integral-philosophy-deploy)
+- **🧪 Testing**: [integral-philosophy-tests](https://github.com/neoallunity/integral-philosophy-tests)
 
 ## 🌟 Getting Started
 
 ### Complete System Setup
 ```bash
 # Clone with all subprojects
-git clone --recursive https://github.com/dominicusin/integral-philosophy.git
+git clone --recursive https://github.com/neoallunity/integral-philosophy.git
 cd integral-philosophy
 
 # Install all components
@@ -47,7 +47,7 @@ cd integral-philosophy
 # Work on specific subproject
 cd subprojects/integral-philosophy-core
 # Clone and develop independently
-git clone https://github.com/dominicusin/integral-philosophy-core.git
+git clone https://github.com/neoallunity/integral-philosophy-core.git
 cd integral-philosophy-core
 ```
 
@@ -114,8 +114,8 @@ All subprojects are licensed under MIT License for maximum compatibility and reu
 
 ### Contact
 - **Organization**: [NeoAllUnity](https://github.com/NeoAllUnity)
-- **Main Repository**: [integral-philosophy](https://github.com/dominicusin/integral-philosophy)
-- **Discussions**: [GitHub Discussions](https://github.com/dominicusin/integral-philosophy/discussions)
+- **Main Repository**: [integral-philosophy](https://github.com/neoallunity/integral-philosophy)
+- **Discussions**: [GitHub Discussions](https://github.com/neoallunity/integral-philosophy/discussions)
 
 ---
 

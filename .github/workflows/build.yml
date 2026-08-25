@@ -26,6 +26,9 @@ jobs:
         article: ${{ fromJson(needs.detect.outputs.articles) }}
     steps:
       - uses: actions/checkout@v4
+      - name: Compute article directory
+        id: dir
+        run: echo "dir=$(dirname "${{ matrix.article }}")" >> "$GITHUB_OUTPUT"
       - uses: wtfjoke/setup-tectonic@v4
         with: {biber-version: "latest"}
       - name: Cache Tectonic
@@ -34,10 +37,10 @@ jobs:
           path: ~/.cache/Tectonic
           key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
           restore-keys: ${{ runner.os }}-tectonic-
-      - name: Compile ${{ matrix.article }}
-        working-directory: ${{ matrix.article }}
+      - name: Compile ${{ steps.dir.outputs.dir }}
+        working-directory: ${{ steps.dir.outputs.dir }}
         run: tectonic main.tex
       - uses: actions/upload-artifact@v4
         with:
           name: pdf-${{ strategy.job-index }}
-          path: ${{ matrix.article }}/main.pdf
+          path: ${{ steps.dir.outputs.dir }}/main.pdf

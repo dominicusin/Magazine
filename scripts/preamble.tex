@@ -18,32 +18,20 @@
 \RequirePackage{titlesec} 
 \RequirePackage{hyperref}
 \RequirePackage{adjustbox}
-\RequirePackage{fontspec}
-\RequirePackage{polyglossia}
-\setdefaultlanguage{russian}
-\setotherlanguage{english}
-\setmainfont{Liberation Serif}
-\setsansfont{Liberation Sans}
-\newfontfamily\cyrillicfont{Liberation Serif}
-\newfontfamily\cyrillicfontsf{Liberation Sans}
-\RequirePackage{biblatex}
-\RequirePackage{tikz}
-\usetikzlibrary{calc,positioning}
+% Шрифты и языки (config/cfg/cfg-fonts.tex)
+\input{config/cfg/cfg-fonts}
 
-% Определение цветов 
-\definecolor{JournalAccent}{HTML}{1B4F8A} 
-\definecolor{JournalAccent2}{HTML}{B31B5E} 
-
-% cfg/cfg-fonts.tex (инлайн: кириллица через fontspec)
-
-% cfg/cfg-metadata.tex (инлайн)
-\providecommand{\SetJournalTitle}[1]{}
-\providecommand{\SetJournalIssue}[1]{}
-\providecommand{\SetJournalYear}[1]{}
-\SetJournalTitle{Интегральная наука}
-\SetJournalYear{2026}
-
-% cfg/cfg-macros.tex (минимум)
-\providecommand{\article}[1]{\section*{#1}}
-
-% cfg-файлы (cfg-bibliography и пр.) отсутствуют в репо — см. TODO
+% Конфигурационные файлы (config/cfg/)
+\input{config/cfg/cfg-metadata}
+\input{config/cfg/cfg-brand}
+\input{config/cfg/cfg-macros}
+\input{config/cfg/cfg-typography}
+\input{config/cfg/cfg-math}
+\input{config/cfg/cfg-floats}
+\input{config/cfg/cfg-structure}
+\input{config/cfg/cfg-links}
+\input{config/cfg/cfg-bibliography}
+\input{config/cfg/cfg-glossary-index}
+\input{config/cfg/cfg-headers}
+\input{config/cfg/cfg-articles}
+\input{config/cfg/cfg-editorial}

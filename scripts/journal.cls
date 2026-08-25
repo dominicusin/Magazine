@@ -11,7 +11,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{xcolor}
 \RequirePackage{etoolbox}
-\RequirePackage[titles]{tocloft}
+\RequirePackage{tocloft}
 \RequirePackage{titlesec}
 \RequirePackage{hyperref}
 

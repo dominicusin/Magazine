@@ -201,3 +201,7 @@ MIT License - see [LICENSE](LICENSE) file
 - 🔄 **Improved Testing** - Focused testing for each subproject
 
 **🚀 Integral Philosophy Publishing System - Now Modular and Production-Ready!**
+
+---
+
+🔄 **Mirrors:** [![GitLab](https://img.shields.io/badge/GitLab-dominicusin-orange?logo=gitlab)](https://gitlab.com/dominicusin/Magazine) · GitHub is canonical.

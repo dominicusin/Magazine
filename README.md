@@ -204,4 +204,4 @@ MIT License - see [LICENSE](LICENSE) file
 
 ---
 
-🔄 **Mirrors:** [![GitLab](https://img.shields.io/badge/GitLab-dominicusin-orange?logo=gitlab)](https://gitlab.com/dominicusin/Magazine) · GitHub is canonical.
+🔄 **Mirrors:** [![GitLab](https://img.shields.io/badge/GitLab-dominicusin-orange?logo=gitlab)](https://gitlab.com/dominicusin/magazine-na) · GitHub is canonical.

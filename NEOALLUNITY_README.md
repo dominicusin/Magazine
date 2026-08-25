@@ -95,26 +95,26 @@ NeoAllUnity/
 ## 📦 Repository Architecture
 
 ### Core Components
-- **[integral-philosophy-core](https://github.com/dominicusin/integral-philosophy-core)** - Content processing engine
-- **[integral-philosophy-web](https://github.com/dominicusin/integral-philosophy-web)** - Web interface & API
-- **[integral-philosophy-cli](https://github.com/dominicusin/integral-philosophy-cli)** - Command-line tools
+- **[integral-philosophy-core](https://github.com/neoallunity/integral-philosophy-core)** - Content processing engine
+- **[integral-philosophy-web](https://github.com/neoallunity/integral-philosophy-web)** - Web interface & API
+- **[integral-philosophy-cli](https://github.com/neoallunity/integral-philosophy-cli)** - Command-line tools
 
 ### Supporting Components
-- **[integral-philosophy-docs](https://github.com/dominicusin/integral-philosophy-docs)** - Documentation site
-- **[integral-philosophy-content](https://github.com/dominicusin/integral-philosophy-content)** - Sample content
-- **[integral-philosophy-config](https://github.com/dominicusin/integral-philosophy-config)** - Configuration management
-- **[integral-philosophy-deploy](https://github.com/dominicusin/integral-philosophy-deploy)** - Deployment solutions
-- **[integral-philosophy-tests](https://github.com/dominicusin/integral-philosophy-tests)** - Testing framework
+- **[integral-philosophy-docs](https://github.com/neoallunity/integral-philosophy-docs)** - Documentation site
+- **[integral-philosophy-content](https://github.com/neoallunity/integral-philosophy-content)** - Sample content
+- **[integral-philosophy-config](https://github.com/neoallunity/integral-philosophy-config)** - Configuration management
+- **[integral-philosophy-deploy](https://github.com/neoallunity/integral-philosophy-deploy)** - Deployment solutions
+- **[integral-philosophy-tests](https://github.com/neoallunity/integral-philosophy-tests)** - Testing framework
 
 ### Main Repository
-- **[integral-philosophy](https://github.com/dominicusin/integral-philosophy)** - Project coordination and unified interface
+- **[integral-philosophy](https://github.com/neoallunity/integral-philosophy)** - Project coordination and unified interface
 
 ## 🚀 Quick Start
 
 ### Complete System Setup
 ```bash
 # Clone with all components
-git clone --recursive https://github.com/dominicusin/integral-philosophy.git
+git clone --recursive https://github.com/neoallunity/integral-philosophy.git
 cd integral-philosophy
 
 # Setup all components
@@ -128,7 +128,7 @@ cd integral-philosophy
 ```bash
 # Work on specific component
 cd projects/integral-philosophy-core
-git clone https://github.com/dominicusin/integral-philosophy-core.git
+git clone https://github.com/neoallunity/integral-philosophy-core.git
 cd integral-philosophy-core
 
 # Independent development
@@ -220,9 +220,9 @@ All projects are licensed under the MIT License for maximum compatibility and re
 ## 🌐 Contact
 
 - **Organization**: [NeoAllUnity](https://github.com/NeoAllUnity)
-- **Main Project**: [integral-philosophy](https://github.com/dominicusin/integral-philosophy)
-- **Discussions**: [GitHub Discussions](https://github.com/dominicusin/integral-philosophy/discussions)
-- **Issues**: [GitHub Issues](https://github.com/dominicusin/integral-philosophy/issues)
+- **Main Project**: [integral-philosophy](https://github.com/neoallunity/integral-philosophy)
+- **Discussions**: [GitHub Discussions](https://github.com/neoallunity/integral-philosophy/discussions)
+- **Issues**: [GitHub Issues](https://github.com/neoallunity/integral-philosophy/issues)
 
 ## 🚀 Production Deployment
 

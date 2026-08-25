@@ -1,27 +1,43 @@
-name: "Build LaTex  Journal with Biber"
+name: "Build LaTeX (articles matrix)"
 on:
-  push:
-jobs:
-  build:
-    runs-on: ubuntu-latest
+  push: {branches: [main]}
+  workflow_dispatch:
 
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    outputs:
+      articles: ${{ steps.set.outputs.articles }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - uses: actions/cache@v3
-        name: Tectonic Cache
+      - uses: actions/checkout@v4
+      - id: set
+        run: |
+          list=$(find articles -mindepth 2 -maxdepth 2 -name main.tex | sort)
+          json=$(echo "$list" | jq -R -s -c 'split("\n")[:-1]')
+          echo "articles=$json" >> "$GITHUB_OUTPUT"
+
+  build:
+    needs: detect
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        article: ${{ fromJson(needs.detect.outputs.articles) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: wtfjoke/setup-tectonic@v4
+        with: {biber-version: "latest"}
+      - name: Cache Tectonic
+        uses: actions/cache@v3
         with:
           path: ~/.cache/Tectonic
           key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
-          restore-keys: |
-            ${{ runner.os }}-tectonic-
-      - uses: wtfjoke/setup-tectonic@v4
-        with:
-          biber-version: "latest"
-      - name: Run Tectonic + Biber
+          restore-keys: ${{ runner.os }}-tectonic-
+      - name: Compile ${{ matrix.article }}
+        working-directory: ${{ matrix.article }}
         run: tectonic main.tex
-      - name: Upload pdf
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
-          name: main
-          path: main.pdf
+          name: pdf-${{ strategy.job-index }}
+          path: ${{ matrix.article }}/main.pdf

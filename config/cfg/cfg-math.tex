@@ -2,8 +2,10 @@
 % cfg-math.tex — математика и теоремы
 % ============================================
 
-\usepackage{amsmath,amssymb,amsthm}
-\numberwithin{equation}{chapter}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\AtBeginDocument{\numberwithin{equation}{chapter}}
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Теорема}[chapter]

@@ -1,0 +1,31 @@
+% IntegralY Journal — root build file
+% Compile: tectonic main.tex
+\documentclass{journal}
+\usepackage{biblatex}
+\addbibresource{global-bibliography.bib}
+
+\begin{document}
+
+\input{chapters/00-titlepage}
+\input{frontmatter/toc}
+\input{chapters/01-foreword}
+\input{frontmatter/preface-ru}
+\input{frontmatter/preface-en}
+\input{chapters/02-abstracts-eng}
+
+% Articles
+\input{articles/bukharov/main}
+\input{articles/holkin/main}
+\input{articles/krasheninnikov/main}
+\input{articles/lugowska/main}
+\input{articles/moiseev/main}
+\input{articles/podzolkova/main}
+\input{articles/safonov/main}
+\input{articles/smolyanova/main}
+
+\input{chapters/98-lists}
+\input{chapters/99-authors}
+\input{chapters/100-lastpage}
+
+\printbibliography
+\end{document}

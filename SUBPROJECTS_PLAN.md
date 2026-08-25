@@ -85,14 +85,14 @@ integral-philosophy/
 
 ### **Git Submodules Structure:**
 ```bash
-git submodule add https://github.com/dominicusin/integral-philosophy-core.git core/
-git submodule add https://github.com/dominicusin/integral-philosophy-web.git web/
-git submodule add https://github.com/dominicusin/integral-philosophy-cli.git cli/
-git submodule add https://github.com/dominicusin/integral-philosophy-content.git content/
-git submodule add https://github.com/dominicusin/integral-philosophy-config.git config/
-git submodule add https://github.com/dominicusin/integral-philosophy-deploy.git deploy/
-git submodule add https://github.com/dominicusin/integral-philosophy-docs.git docs/
-git submodule add https://github.com/dominicusin/integral-philosophy-tests.git tests/
+git submodule add https://github.com/neoallunity/integral-philosophy-core.git core/
+git submodule add https://github.com/neoallunity/integral-philosophy-web.git web/
+git submodule add https://github.com/neoallunity/integral-philosophy-cli.git cli/
+git submodule add https://github.com/neoallunity/integral-philosophy-content.git content/
+git submodule add https://github.com/neoallunity/integral-philosophy-config.git config/
+git submodule add https://github.com/neoallunity/integral-philosophy-deploy.git deploy/
+git submodule add https://github.com/neoallunity/integral-philosophy-docs.git docs/
+git submodule add https://github.com/neoallunity/integral-philosophy-tests.git tests/
 ```
 
 ## 🎯 **Преимущества Подпроектной Структуры:**

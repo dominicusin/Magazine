@@ -25,12 +25,8 @@
 \definecolor{JournalAccent}{HTML}{1B4F8A}
 \definecolor{JournalAccent2}{HTML}{B31B5E}
 
-% Шрифты для XeTeX (tectonic): fontspec+polyglossia с Latin Modern (есть кириллица)
-\usepackage{fontspec}
-\usepackage{polyglossia}
-\setdefaultlanguage{russian}
-\setotherlanguage{english}
-\newfontfamily\cyrillicfont{lmromandesign}[Ligatures=TeX]
+% Языки (tectonic-safe): babel + XeTeX, шрифт по умолчанию Latin Modern (кириллица есть)
+\usepackage[english,russian]{babel}
 
 % Конфигурационные файлы (config/cfg/)
 \input{config/cfg/cfg-metadata}

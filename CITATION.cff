@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this journal, please cite it."
+title: "Integral Philosophy Journal (Magazine)"
+abstract: "Peer-reviewed journal on integral philosophy, published via LaTeX."
+authors:
+  - family-names: "Editorial Board"
+license: LGPL-2.1
+repository-code: "https://github.com/neoallunity/Magazine"
+url: "https://github.com/neoallunity/Magazine"
+keywords: [philosophy, journal, latex, integral]
